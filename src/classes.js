@@ -1,13 +1,11 @@
 class Foo {
-  bar() {
-    return `Create a simple class called 'Foo'and create a new instance from it called 'bar'`;
-  }
+
 }
 
-var bar = new Foo(`Create a simple class called 'Foo'and create a new instance from it called 'bar'`)
+var bar = new Foo();
 
 class Dog {
-  constructor(says) {
+  constructor() {
     this.says = 'life is ruff';
   }
 }
@@ -18,7 +16,7 @@ class Cat {
   }
 }
 
-var garfield = new Cat('Meow');
+var garfield = new Cat();
 
 class FacelessMan {
   constructor(name) {
@@ -27,11 +25,10 @@ class FacelessMan {
 }
 
 var aMan = new FacelessMan(`Jaqen H'ghar`);
-var aGirl = new FacelessMan(`The Waif`);
 
 class Lion extends Cat {
-  constructor(size) {
-    super(size, 'Lion');
+  constructor() {
+    super();
     this.size = 'BIG';
   }
 }
@@ -40,9 +37,22 @@ var garfield = new Lion();
 class KeepSecret {
   constructor(dontTellNobody) {
     this.squeal = function() {
-      return 'My class rocks!';
+      return dontTellNobody;
     }
   }
 }
 
 var mySecret = new KeepSecret();
+
+class Key {
+}
+
+class Safe {
+  constructor(secret, keyhole) {
+    this.unlock = function(key) {
+      if (key === keyhole) {
+            return secret;
+      }
+    }
+  }
+}
