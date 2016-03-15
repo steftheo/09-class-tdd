@@ -19,3 +19,12 @@ class Cat {
 }
 
 var garfield = new Cat('Meow');
+
+class FacelessMan {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+var aMan = new FacelessMan(`Jaqen H'ghar`);
+var aGirl = new FacelessMan(`The Waif`);
