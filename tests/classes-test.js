@@ -18,7 +18,7 @@ test(`Cats are a little bit different`, function(assert) {
   assert.ok(garfield instanceof Cat,
     `Create a class called 'Cat' and a new instance of Cat called 'garfield'`);
 
-  assert.equals(garfield.growl(), 'meow',
+  assert.equal(garfield.growl(), 'meow',
     `The class should have a method called 'growl' that returns the string 'meow'`);
 });
 
