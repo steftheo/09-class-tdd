@@ -36,3 +36,13 @@ class Lion extends Cat {
   }
 }
 var garfield = new Lion();
+
+class KeepSecret {
+  constructor(dontTellNobody) {
+    this.squeal = function() {
+      return 'My class rocks!';
+    }
+  }
+}
+
+var mySecret = new KeepSecret();

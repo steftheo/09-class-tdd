@@ -45,7 +45,7 @@ test(`A student knows how to keep a secret`, function(assert) {
   const mySecret = 'My class rocks!';
   const dontTellNobody = new KeepSecret(mySecret);
 
-  assert.ok(mySecret instanceof KeepSecret,
+  assert.ok(dontTellNobody instanceof KeepSecret,
     `Create a new class called 'KeepSecret' that takes a single argument that it stores for later`);
 
   for (var prop in dontTellNobody) {
