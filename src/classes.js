@@ -11,3 +11,11 @@ class Dog {
     this.says = 'life is ruff';
   }
 }
+
+class Cat {
+  growl() {
+    return 'meow';
+  }
+}
+
+var garfield = new Cat('Meow');
