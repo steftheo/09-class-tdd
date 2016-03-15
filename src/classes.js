@@ -1,5 +1,5 @@
 class Foo {
-  asfd
+  asfdsadf
 }
 
 var bar;
